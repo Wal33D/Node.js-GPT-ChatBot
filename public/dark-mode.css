@@ -1,0 +1,75 @@
+/* dark mode styles */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+header:not(.dark-mode) {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+#chat-container.dark-mode {
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.);
+}
+
+#chat-messages li.dark-mode .message-text {
+  background-color: #444;
+  color: #fff;
+}
+
+#input-text.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+button.dark-mode {
+  background-color: #0970ff;
+}
+
+.message-text::after {
+  border-color: transparent #f2f2f2 transparent transparent;
+}
+
+.message-text.dark-mode::after {
+  border-color: transparent #444 transparent transparent;
+}
+
+.user-message .message-text:not(.dark-mode) {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.user-message .message-text.dark-mode {
+  background-color: #444;
+}
+
+button:not(.dark-mode) {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+button.dark-mode:hover {
+  background-color: #0a60bf;
+}
+
+.assistant-message .message-text {
+  background-color: lightslategrey;
+  color: #fff;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 80%;
+}
+
+.assistant-message::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent lightslategrey transparent transparent;
+  transform: translateY(-50%);
+}
